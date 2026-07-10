@@ -35,9 +35,12 @@ elif menu == "🗂 MIS Data":
     for project_name, project in PROJECTS.items():
 
         df = get_form_data(
-            project["project_id"],
+            PROJECTS["Survey Form"]["project_id"],
             FORMS["breedfarm"]
         )
+
+        st.write(df.shape)
+        st.dataframe(df)
 
         df = standardize_dataframe(
             df,
