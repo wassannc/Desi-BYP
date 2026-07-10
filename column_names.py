@@ -18,8 +18,8 @@ BREEDFARM_COLUMNS = {
     "pd.SHG": "SHG name",
     "pd.Family_members": "Total family members",
     "pd.BFE_extent_acr": "BFE extent.acrs",
-    "pd.GPS.Latitude": "Latitude",
-    "pd.GPS.Longitude": "Longitude",
+    "pd.GPS-Latitude": "Latitude",
+    "pd.GPS-Longitude": "Longitude",
     "pd.Photo_with_birds": "Photo"
 
 }
