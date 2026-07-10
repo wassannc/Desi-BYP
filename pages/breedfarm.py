@@ -4,17 +4,11 @@ from config import PROJECTS, FORMS
 
 def show_breedfarm():
 
-    st.header("🗂 MIS Data")
-
-    st.subheader("Breed Farm Assessment")
-
-    project = "Survey"
+    st.title("Breed Farm Assessment")
 
     df = get_form_data(
-        PROJECTS[project]["project_id"],
+        PROJECTS["Survey"]["project_id"],
         FORMS["breedfarm"]
     )
 
     st.dataframe(df)
-
-    st.write("Records :", len(df))
