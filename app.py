@@ -56,7 +56,8 @@ elif menu == "🗂 MIS Data":
         ignore_index=True,
         sort=False
     )
-
+    display_df = master_df.rename(columns=BREEDFARM_COLUMNS)
+    
     st.write(f"Total Records : {len(master_df)}")
 
-    st.dataframe(master_df)
+    st.dataframe(display_df)
