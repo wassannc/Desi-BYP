@@ -4,10 +4,12 @@ PASSWORD = "Varahi@2025"
 
 PROJECTS = {
     "Survey Form": {
-        "project_id": 15
+        "project_id": 15,
+        "district": None
     },
     "ASR-NC": {
-        "project_id": 9
+        "project_id": 9,
+        "district": "ASR"
     }
 }
 
