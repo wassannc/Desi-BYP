@@ -34,27 +34,14 @@ elif menu == "🗂 MIS Data":
 
     for project_name, project in PROJECTS.items():
 
-        def get_form_data(project_id, form_id):
+        # Read data from ODK
+        df = get_form_data(
+            project["project_id"],
+            FORMS["breedfarm"]
+        )
 
-            url = f"{ODK_URL}/v1/projects/{project_id}/forms/{form_id}.svc/Submissions"
-
-            print(url)
-
-            response = requests.get(
-                url,
-                auth=HTTPBasicAuth(USERNAME, PASSWORD),
-                headers={"Accept": "application/json"}
-            )
-
-            print(response.status_code)
-
-            response.raise_for_status()
-
-            data = response.json()["value"]
-
-            return pd.json_normalize(data)
-
-            df = standardize_dataframe(
+        # Standardize dataframe
+        df = standardize_dataframe(
             df,
             project_name=project_name,
             district=project["district"]
@@ -62,6 +49,7 @@ elif menu == "🗂 MIS Data":
 
         frames.append(df)
 
+    # Merge all projects
     master_df = pd.concat(
         frames,
         ignore_index=True,
