@@ -14,7 +14,5 @@ PROJECTS = {
 }
 
 FORMS = {
-    "breedfarm": {
-        "form_id": "Assessment of Breedfarm"
-    }
+    "breedfarm": "Assessment of Breedfarm"
 }
