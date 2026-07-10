@@ -29,3 +29,12 @@ elif menu == "🗂 MIS Data":
     st.header("Breed Farm Assessment")
 
     st.write("Loading data...")
+
+    df = get_form_data(
+        PROJECTS["Survey"]["project_id"],
+        FORMS["breedfarm"]
+    )
+
+    st.write(f"Total Records : {len(df)}")
+
+    st.dataframe(df)
