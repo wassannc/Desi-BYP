@@ -19,5 +19,4 @@ BREEDFARM_COLUMNS = {
     "pd.Family_members": "Total family members",
     "pd.BFE_extent_acr": "BFE extent.acrs",
     "pd.Photo_with_birds": "Photo"
-
 }
