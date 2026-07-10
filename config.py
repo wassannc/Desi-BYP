@@ -1,3 +1,7 @@
+ODK_URL = "https://central.wassan.org"
+USERNAME = "Balaram@wassan.org"
+PASSWORD = "Varahi@2025"
+
 PROJECTS = {
     "Survey Form": {
         "project_id": 15
