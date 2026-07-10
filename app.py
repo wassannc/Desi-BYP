@@ -32,7 +32,7 @@ elif menu == "🗂 MIS Data":
 
     df = get_form_data(
         PROJECTS["Survey Form"]["project_id"],
-        FORMS["breedfarm"]
+        FORMS["Assessment of Breedfarm"]
     )
 
     st.write(f"Total Records : {len(df)}")
