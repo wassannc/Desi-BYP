@@ -34,15 +34,27 @@ elif menu == "🗂 MIS Data":
 
     for project_name, project in PROJECTS.items():
 
-        df = get_form_data(
-            PROJECTS["Survey Form"]["project_id"],
-            FORMS["breedfarm"]
-        )
+        def get_form_data(project_id, form_id):
 
-        st.write(df.shape)
-        st.dataframe(df)
+            url = f"{ODK_URL}/v1/projects/{project_id}/forms/{form_id}.svc/Submissions"
 
-        df = standardize_dataframe(
+            print(url)
+
+            response = requests.get(
+                url,
+                auth=HTTPBasicAuth(USERNAME, PASSWORD),
+                headers={"Accept": "application/json"}
+            )
+
+            print(response.status_code)
+
+            response.raise_for_status()
+
+            data = response.json()["value"]
+
+            return pd.json_normalize(data)
+
+            df = standardize_dataframe(
             df,
             project_name=project_name,
             district=project["district"]
