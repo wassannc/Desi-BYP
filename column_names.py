@@ -8,6 +8,8 @@ BREEDFARM_COLUMNS = {
 
     "pd.gp": "Gram Panchayat",
 
-    "pd.village": "Village"
+    "pd.village": "Village",
+
+    "pd.farmer_name": "Farmer name"
     
 }
