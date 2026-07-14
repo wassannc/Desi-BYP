@@ -12,7 +12,7 @@ BREEDFARM_COLUMNS = {
 
     "pd.farmer_name": "Farmer name",
     
-    "pd.project": "Project"
+    "pd.Mobile_no": "Mobile no."
 
     
 }
