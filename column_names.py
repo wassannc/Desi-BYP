@@ -16,7 +16,9 @@ BREEDFARM_COLUMNS = {
 
     "pd.Completed_in": "Constructed in",
 
-    "pd.SHG": "SHG Name"
+    "pd.SHG": "SHG Name",
+
+    "pd-Family_members": "Total family"
 
     
 }
