@@ -10,6 +10,8 @@ BREEDFARM_COLUMNS = {
 
     "pd.village": "Village",
 
-    "pd.farmer_name": "Farmer name"
+    "pd.farmer_name": "Farmer name",
+    "pd.project": "Project"
+
     
 }
