@@ -20,7 +20,9 @@ BREEDFARM_COLUMNS = {
 
     "pd.Family_members": "Total family",
 
-    "pd.BFE_extent_acr": "BFE-Extent-acres"
+    "pd.BFE_extent_acr": "BFE-Extent-acres",
+
+    "pd.GPS-Latitude": "Latitude"
 
     
 }
