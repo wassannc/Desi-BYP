@@ -18,7 +18,9 @@ BREEDFARM_COLUMNS = {
 
     "pd.SHG": "SHG Name",
 
-    "pd-Family_members": "Total family"
+    "pd-Family_members": "Total family",
+
+    "pd.BFE_extent_acr": "BFE-Extent-acres"
 
     
 }
