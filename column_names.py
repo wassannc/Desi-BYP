@@ -14,7 +14,7 @@ BREEDFARM_COLUMNS = {
     
     "pd.Mobile_no": "Mobile no.",
 
-    "pd-Completed_in": "Constructed in"
+    "pd.Completed_in": "Constructed in"
 
     
 }
