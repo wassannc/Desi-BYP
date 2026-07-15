@@ -22,7 +22,7 @@ BREEDFARM_COLUMNS = {
 
     "pd.BFE_extent_acr": "BFE-Extent-acres",
 
-    "pd.GPS.Latitude": "Latitude"
+    "pd.GPS.coordinates": "GPS Location"
 
     
 }
