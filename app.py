@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Desi Backyard Poultry")
+st.title("🐔 Desi Backyard Poultry")
 
 menu = st.sidebar.radio(
     "Navigation",
