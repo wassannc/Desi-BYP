@@ -16,8 +16,8 @@ st.title("🐔 Desi Backyard Poultry")
 menu = st.sidebar.radio(
     "Navigation",
     [
-        "📊 Dashboard",
-        "🗂 MIS Data"
+        "🗂 MIS Data",
+        "📊 Dashboard"
     ]
 )
 
