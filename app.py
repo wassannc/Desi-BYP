@@ -7,11 +7,10 @@ from column_names import BREEDFARM_COLUMNS
 
 st.set_page_config(
     page_title="Desi Backyard Poultry",
-    page_icon="🐔",
     layout="wide"
 )
 
-st.title("🐔 Desi Backyard Poultry")
+st.title("Desi Backyard Poultry")
 
 menu = st.sidebar.radio(
     "Navigation",
